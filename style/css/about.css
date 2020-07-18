@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+/*font family*/
+/*font size*/
+/*colors*/
+/*media query*/
+/*small device*/
+/*media device*/
+/*large device*/
+/*x-large device*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Abril Fatface", cursive;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#about-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../asset/image/background.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 1px dashed #8e8b8b;
+}
+
+#about-page .container {
+  height: 60vh;
+  width: 60vw;
+  box-shadow: 0 5px 20px 4px #49515d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  opacity: 0.85;
+}
+
+#about-page .container .about-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about-page .container .about-page-content h3 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+#about-page .container .about-page-content h3::after {
+  content: " Liam";
+  animation: textChange 10s linear infinite;
+}
+
+#about-page .container .about-page-content p {
+  width: 52%;
+  margin-bottom: 40px;
+  color: #8e8b8b;
+}
+
+#about-page .container .buttons {
+  margin-top: 3.5rem;
+}
+
+#about-page .container .buttons a {
+  display: inline-block;
+  margin: 1rem 2rem;
+  font-size: 1rem;
+  width: 180px;
+  border: 1px solid;
+  padding: 0.8rem 0;
+  border-radius: 5px;
+  transition: all 0.5s;
+  text-align: center;
+  color: #e4ae26;
+}
+
+#about-page .container .buttons a:hover {
+  transform: scale(1.2);
+}
+
+#about-page .container .buttons .download {
+  background-color: #e4ae26;
+  color: #ffffff;
+}
+
+/* Animation */
+@keyframes textChange {
+  40% {
+    content: " a front-end developer";
+  }
+  70% {
+    content: " a web designer";
+  }
+}
+/*# sourceMappingURL=about.css.map */

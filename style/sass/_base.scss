@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+/*font family*/
+$Abril_Fatface: "Abril Fatface", cursive;
+$Raleway: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
+
+/*font size*/
+
+/*colors*/
+$yellow: #e4ae26;
+$box-shadow-color: #999999;
+$homepageBackground: #fbfbfb;
+$navColor: #777;
+$black: #1a1a1a;
+$dark: #282c34;
+$white: #ffffff;
+$grey: #49515d;
+$lightgrey: #8e8b8b;
+$red: #900;
+
+/*media query*/
+$screen-small-max: 480px;
+$screen-medium-max: 768px;
+$screen-large-max: 992px;
+$screen-xLarge-max: 1200px;
+
+/*small device*/
+@mixin smallMedia {
+  @media (max-width: #{$screen-small-max}) {
+    @content;
+  }
+}
+
+/*media device*/
+@mixin mediumMedia {
+  @media (max-width: #{$screen-medium-max}) {
+    @content;
+  }
+}
+
+/*large device*/
+@mixin largeMedia {
+  @media (max-width: #{$screen-large-max}) {
+    @content;
+  }
+}
+
+/*x-large device*/
+@mixin xLargeMedia {
+  @media (max-width:#{$screen-xLarge-max}) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: $Abril_Fatface;
+  scroll-behavior: smooth;
+  @include xLargeMedia() {
+    font-size: 15px;
+  }
+  @include largeMedia() {
+    font-size: 14px;
+  }
+  @include mediumMedia() {
+    font-size: 13px;
+  }
+  @include smallMedia() {
+    font-size: 12px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}

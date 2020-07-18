@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liam Personal Website</title>
+    <link rel="stylesheet" href="style/css/index.css" />
+    <link rel="stylesheet" href="style/css/about.css" />
+    <link rel="stylesheet" href="style/css/work.css" />
+    <link rel="stylesheet" href="style/css/education.css" />
+    <link rel="stylesheet" href="style/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!--Home Page-->
+    <section id="homepage">
+      <header class="nav-bar">
+        <a href="#homepage" class="logo"></a>
+        <nav class="nav-link">
+          <a href="#homepage" class="active">Home</a>
+          <a href="#about-page">About</a>
+          <a href="#works-page">Works</a>
+          <a href="#education-page">Education</a>
+          <a href="#contact-page">Contact</a>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="title fade-slide-down">
+          <h2>Liam's Portfolio</h2>
+          <img
+            src="./asset/image/sun.svg"
+            alt="light"
+            class="light-icon"
+            onclick="setDarkMode()"
+          />
+        </div>
+        <p id="firstParagraph" class="animate-pop-in"></p>
+        <div class="scroll-down animate-pop-in">
+          <a href="#about-page">
+            <img src="asset/image/downarrow.png" width="20" alt="down-arrow" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--About Me Page-->
+    <section id="about-page">
+      <div class="container">
+        <div class="about-page-content">
+          <h3>Hello, I'm</h3>
+          <p>
+            A qualified Information Communication Technology graduate. Expert at
+            utilising my excellent coding and problem-solving skills to create
+            web applications based on client requirements.
+          </p>
+        </div>
+        <div class="buttons">
+          <a href="#contact-page">Contact Me</a>
+          <a href="#" class="download">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Works Page-->
+    <section id="works-page">
+      <div class="container">
+        <h3>Work</h3>
+        <div class="work-list">
+          <h4 onclick="setSlide(1)">
+            Weather Forecast App
+          </h4>
+          <h4 onclick="setSlide(2)">
+            Online Pizza Order
+          </h4>
+          <h4 onclick="setSlide(3)">
+            JavaScript Calculator
+          </h4>
+        </div>
+        <div class="work-slider">
+          <div class="slider-container">
+            <div class="slider-weather-project">
+              <div class="image-container">
+                <img
+                  src="asset/image/project_weather.png"
+                  alt="weather_project"
+                />
+              </div>
+              <h4 class="info">
+                /* Using React to create the application, redux for data storage
+                */
+              </h4>
+            </div>
+
+            <div class="slider-pizza-project">
+              <div class="image-container">
+                <img
+                  src="asset/image/project_pizza.png"
+                  alt="weather_project"
+                />
+              </div>
+              <h4 class="info">
+                /* Using React, Koa, MongoDB to create an online pizza order
+                system */
+              </h4>
+            </div>
+
+            <div class="slider-calculator-project">
+              <div class="image-container">
+                <img
+                  src="asset/image/project_calculator.png"
+                  alt="weather_project"
+                />
+              </div>
+              <h4 class="info">
+                /* Using JavaScript to create a simple calculator */
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Education Page-->
+    <section id="education-page">
+      <div class="title">
+        <h3>Education & Experience</h3>
+        <p>/* My education and experience in Australia */</p>
+      </div>
+      <div class="container">
+        <div class="container-wrap">
+          <div class="box">
+            <div class="box-title">
+              <h4>Mar 2018 – Feb 2019</h4>
+              <h4>Professional Year</h4>
+            </div>
+            <div class="box-content">
+              <p>
+                Key Subjects: Australian Business Culture and Environment,
+                Achieving Career Success, Australian Workplace Skills and
+                Professional Business Communication
+              </p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Performance Education, Sydney</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">
+              <h4>Feb 2016 – Dec 2017</h4>
+              <h4>Bachelor of Information Communication and Technology</h4>
+            </div>
+            <div class="box-content">
+              <p>
+                Key Achievements: High Distinction for all programming-related
+                subjects Membership in the Golden Key International Honor
+                Society
+              </p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Western Sydney University, Sydney</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">
+              <h4>Feb 2015 – Jan 2016</h4>
+              <h4>Diploma of Information Communication and Technology</h4>
+            </div>
+
+            <div class="box-content">
+              <p>
+                Key Achievements: Deans Merit Scholarship
+              </p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Western Sydney University, Sydney</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">
+              <h4>March 2020 – July 2020</h4>
+              <h4>Full Stack Development Training Program</h4>
+            </div>
+
+            <div class="box-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                vitae libero amet quam fugiat, soluta suscipit in mollitia
+                distinctio numquam accusantium a aliquid iusto? Esse
+                exercitationem deleniti ullam reiciendis totam.
+              </p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>JiangRen Academy, Sydney</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">
+              <h4>Sep 2018 – Dec 2018</h4>
+              <h4>Front-End Developer Intern</h4>
+            </div>
+
+            <div class="box-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                vitae libero amet quam fugiat, soluta suscipit in mollitia
+                distinctio numquam accusantium a aliquid iusto? Esse
+                exercitationem deleniti ullam reiciendis totam.
+              </p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Vessel Furniture Sydney NSW</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">
+              <h4>Jan 2017 – Current</h4>
+              <h4>Juicer and Sales</h4>
+            </div>
+
+            <div class="box-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                vitae libero amet quam fugiat, soluta suscipit in mollitia
+                distinctio numquam accusantium a aliquid iusto? Esse
+                exercitationem deleniti ullam reiciendis totam.
+              </p>
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Top Juice Sydney NSW</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Page-->
+    <section id="contact-page">
+      <div class="title">
+        <h3>Contact Me</h3>
+        <p>/* We can get in touch */</p>
+      </div>
+      <div class="container">
+        <div class="contact-info">
+          <div class="item">
+            <p>Mobile</p>
+            <p>+61 406 587 878</p>
+          </div>
+          <div class="item">
+            <p>Email</p>
+            <p>tangwangjun321@gmail.com</p>
+          </div>
+          <div class="item">
+            <p>Address</p>
+            <p>Sydney, NSW</p>
+          </div>
+        </div>
+
+        <form action="#" class="contact-form">
+          <input type="text" class="name" placeholder="Your Full Name" />
+          <input type="email" class="email" placeholder="Your Email" />
+          <input type="text" class="subject" placeholder="Subject" />
+          <textarea class="message" placeholder="Message"></textarea>
+          <!-- <input type="submit" value="Send Message" class="button" /> -->
+          <button class="button">Send Message</button>
+        </form>
+        <div class="back-top">
+          <a href="#homepage"><i class="fas fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        &copy; 2020 | Created By Liam
+      </div>
+      <div class="socialIcon">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

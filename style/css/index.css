@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+/*font family*/
+/*font size*/
+/*colors*/
+/*media query*/
+/*small device*/
+/*media device*/
+/*large device*/
+/*x-large device*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Abril Fatface", cursive;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+body #homepage .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+  top: 0;
+  z-index: 10;
+  transition: all 0.3s;
+  border-bottom: 1px solid #eee;
+  opacity: 0;
+}
+
+body #homepage .nav-bar nav a {
+  transition: 0.3s liner;
+  color: #777;
+  padding: 0.5em 1em;
+}
+
+body #homepage .nav-bar nav a:hover {
+  background-color: #eee;
+}
+
+body #homepage .nav-bar nav .active {
+  background-color: #eee;
+}
+
+body #homepage .nav-bar .logo {
+  margin-left: 3rem;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../asset/image/logo.svg);
+  background-size: contain;
+}
+
+body #homepage .show-nav {
+  background-color: #ffffff;
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+body #homepage .container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1a1a1a;
+  letter-spacing: 0.15rem;
+  border-bottom: 1px solid #8e8b8b;
+}
+
+body #homepage .container .title {
+  display: flex;
+  animation-delay: 0.4s;
+}
+
+body #homepage .container .title .light-icon {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 1rem;
+}
+
+body #homepage .container .title .light-icon:hover {
+  transform: scale(1.2);
+}
+
+body #homepage .container .title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e4ae26;
+}
+
+body #homepage .container p {
+  animation-delay: 0.8s;
+  color: #8e8b8b;
+}
+
+body #homepage .container .scroll-down {
+  position: absolute;
+  bottom: 2vh;
+  text-align: center;
+  animation-delay: 1s;
+  transition: all 0.3s;
+  animation: pulse 1.5s ease-out infinite;
+  cursor: pointer;
+  z-index: 10;
+}
+
+body #homepage .container .scroll-down img {
+  animation: fade-slide-up 1s ease-out forwards;
+}
+
+.dark-mode {
+  background-color: #282c34;
+}
+
+.dark-mode #homepage .container h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-mode #homepage .container h2:after {
+  content: "Liam's Portfolio";
+  position: absolute;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to left, #03a9f4, #ffeb3b, #03a9f4);
+  -webkit-background-clip: text;
+  animation: spotlight 5s infinite;
+}
+
+.dark-mode #homepage .container p {
+  color: #ffffff;
+}
+
+.dark-mode #contact-page .container .contact-info .item {
+  border: 1px solid #e4ae26;
+}
+
+.dark-mode #contact-page .container .contact-form input,
+.dark-mode #contact-page .container .contact-form textarea {
+  border: 1px solid #e4ae26;
+}
+
+.dark-mode footer {
+  background: url("../../asset/image/background.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* Animations */
+.animate-pop-in {
+  animation: pop-in 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+
+.fade-slide-down {
+  opacity: 0;
+  animation: fade-slide-down 2s cubic-bezier(0, 0.5, 0, 1) forwards;
+}
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: none;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    opacity: 0.6;
+    transform: none;
+  }
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes spotlight {
+  0% {
+    clip-path: circle(50px at 0%);
+  }
+  50% {
+    clip-path: circle(50px at 100%);
+  }
+  100% {
+    clip-path: circle(50px at 0%);
+  }
+}
+/*# sourceMappingURL=index.css.map */

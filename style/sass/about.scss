@@ -1,0 +1,83 @@
+@import "base";
+#about-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../asset/image/background.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 1px dashed $lightgrey;
+
+  .container {
+    height: 60vh;
+    width: 60vw;
+    box-shadow: 0 5px 20px 4px $grey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $white;
+
+    opacity: 0.85;
+
+    .about-page-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h3 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+
+        &::after {
+          content: " Liam";
+          animation: textChange 10s linear infinite;
+        }
+      }
+
+      p {
+        width: 52%;
+        margin-bottom: 40px;
+        color: $lightgrey;
+      }
+    }
+
+    .buttons {
+      margin-top: 3.5rem;
+
+      a {
+        display: inline-block;
+        margin: 1rem 2rem;
+        font-size: 1rem;
+        width: 180px;
+        border: 1px solid;
+        padding: 0.8rem 0;
+        border-radius: 5px;
+        transition: all 0.5s;
+        text-align: center;
+        color: $yellow;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      .download {
+        background-color: $yellow;
+        color: $white;
+      }
+    }
+  }
+}
+
+/* Animation */
+
+@keyframes textChange {
+  40% {
+    content: " a front-end developer";
+  }
+  70% {
+    content: " a web designer";
+  }
+}

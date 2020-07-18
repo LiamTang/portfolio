@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+/*font family*/
+/*font size*/
+/*colors*/
+/*media query*/
+/*small device*/
+/*media device*/
+/*large device*/
+/*x-large device*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Abril Fatface", cursive;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#works-page {
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 1px dashed #8e8b8b;
+}
+
+#works-page .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#works-page .container h3 {
+  padding-top: 5rem;
+  color: #e4ae26;
+  font-size: 2rem;
+}
+
+#works-page .container .work-list {
+  display: flex;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+#works-page .container .work-list h4 {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+#works-page .container .work-list h4:hover {
+  background-color: #eee;
+}
+
+#works-page .container .work-slider {
+  width: 70vw;
+}
+
+#works-page .container .work-slider .slider-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#works-page .container .work-slider .slider-container .slider-weather-project {
+  transition: all 0.8s;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  opacity: 1;
+  overflow-x: hidden;
+}
+
+#works-page .container .work-slider .slider-container .slider-weather-project .image-container {
+  border-radius: 8px;
+  height: 60vh;
+}
+
+#works-page .container .work-slider .slider-container .slider-weather-project .image-container img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 8px 20px 8px #49515d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#works-page .container .work-slider .slider-container .slider-weather-project h4 {
+  margin-top: 50px;
+  color: #900;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  letter-spacing: 6px;
+  font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#works-page .container .work-slider .slider-container .slider-pizza-project {
+  transition: all 0.8s;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(50%);
+  top: 0;
+  visibility: hidden;
+}
+
+#works-page .container .work-slider .slider-container .slider-pizza-project .image-container {
+  border-radius: 8px;
+  height: 60vh;
+  width: 100%;
+}
+
+#works-page .container .work-slider .slider-container .slider-pizza-project .image-container img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 8px 20px 8px #49515d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#works-page .container .work-slider .slider-container .slider-pizza-project h4 {
+  margin-top: 50px;
+  color: #900;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  letter-spacing: 6px;
+  font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#works-page .container .work-slider .slider-container .slider-calculator-project {
+  transition: all 0.8s;
+  position: absolute;
+  visibility: hidden;
+  transform: translateX(50%);
+  top: 0;
+  opacity: 0;
+}
+
+#works-page .container .work-slider .slider-container .slider-calculator-project .image-container {
+  border-radius: 8px;
+  height: 60vh;
+}
+
+#works-page .container .work-slider .slider-container .slider-calculator-project .image-container img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 8px 20px 8px #49515d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#works-page .container .work-slider .slider-container .slider-calculator-project h4 {
+  margin-top: 50px;
+  color: #900;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  letter-spacing: 6px;
+  font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#works-page .container .work-slider .slider-container .active-slide {
+  visibility: visible;
+  transform: translateX(0);
+  transition: all 0.8s;
+  opacity: 1;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+#works-page .container .work-slider .slider-container .hide-slide {
+  visibility: hidden;
+  transition: all 0.8s;
+  transform: translateX(-150%);
+  opacity: 0;
+  overflow-x: hidden;
+}
+
+@keyframes fade-slide-out {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+/*# sourceMappingURL=work.css.map */

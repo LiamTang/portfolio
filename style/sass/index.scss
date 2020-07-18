@@ -1,0 +1,216 @@
+@import "base";
+body {
+  background-color: $homepageBackground;
+  #homepage {
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      padding: 1rem 0;
+      top: 0;
+      z-index: 10;
+      transition: all 0.3s;
+      border-bottom: 1px solid #eee;
+      opacity: 0;
+
+      nav {
+        a {
+          transition: 0.3s liner;
+          color: $navColor;
+          padding: 0.5em 1em;
+          &:hover {
+            background-color: #eee;
+          }
+        }
+        .active {
+          background-color: #eee;
+        }
+      }
+
+      .logo {
+        margin-left: 3rem;
+        width: 50px;
+        height: 50px;
+        background-image: url(../../asset/image/logo.svg);
+        background-size: contain;
+      }
+    }
+    .show-nav {
+      background-color: $white;
+      transition: all 0.3s;
+      opacity: 1;
+    }
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $black;
+      letter-spacing: 0.15rem;
+      border-bottom: 1px solid $lightgrey;
+
+      .title {
+        display: flex;
+        animation-delay: 0.4s;
+        .light-icon {
+          height: 2rem;
+          width: 2rem;
+          cursor: pointer;
+          transition: all 0.3s;
+          margin-left: 1rem;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        h2 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          color: $yellow;
+        }
+      }
+
+      p {
+        animation-delay: 0.8s;
+        color: $lightgrey;
+      }
+
+      .scroll-down {
+        position: absolute;
+        bottom: 2vh;
+        text-align: center;
+        animation-delay: 1s;
+        transition: all 0.3s;
+        animation: pulse 1.5s ease-out infinite;
+        cursor: pointer;
+        z-index: 10;
+        img {
+          animation: fade-slide-up 1s ease-out forwards;
+        }
+      }
+    }
+  }
+}
+
+.dark-mode {
+  background-color: $dark;
+  #homepage {
+    .container {
+      h2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:after {
+          content: "Liam's Portfolio";
+          position: absolute;
+          color: transparent;
+          text-align: center;
+          background: linear-gradient(to left, #03a9f4, #ffeb3b, #03a9f4);
+          -webkit-background-clip: text;
+          animation: spotlight 5s infinite;
+        }
+      }
+      p {
+        color: $white;
+      }
+    }
+  }
+
+  #contact-page {
+    .container {
+      .contact-info {
+        .item {
+          border: 1px solid $yellow;
+        }
+      }
+      .contact-form {
+        input,
+        textarea {
+          border: 1px solid $yellow;
+        }
+      }
+    }
+  }
+
+  footer {
+    background: url("../../asset/image/background.jpg") center no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Animations */
+
+.animate-pop-in {
+  animation: pop-in 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+
+.fade-slide-down {
+  opacity: 0;
+  animation: fade-slide-down 2s cubic-bezier(0, 0.5, 0, 1) forwards;
+}
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: none;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    opacity: 0.6;
+    transform: none;
+  }
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes spotlight {
+  0% {
+    clip-path: circle(50px at 0%);
+  }
+  50% {
+    clip-path: circle(50px at 100%);
+  }
+  100% {
+    clip-path: circle(50px at 0%);
+  }
+}
