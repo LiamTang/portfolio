@@ -22,31 +22,30 @@ html {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
 }
 
 #education-page {
@@ -56,7 +55,7 @@ body {
 }
 
 #education-page .title {
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 
 #education-page .title h3 {
@@ -93,6 +92,12 @@ body {
   margin: 0 5rem;
 }
 
+@media (max-width: 480px) {
+  #education-page .container .container-wrap {
+    flex-direction: column;
+  }
+}
+
 #education-page .container .container-wrap .box {
   width: 30%;
   height: 25vh;
@@ -109,8 +114,18 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 480px) {
+  #education-page .container .container-wrap .box {
+    width: 100%;
+  }
+}
+
 #education-page .container .container-wrap .box:hover {
   transform: translateY(-5px) translateZ(0);
+}
+
+#education-page .container .container-wrap .box:hover .box-content {
+  text-align: center;
 }
 
 #education-page .container .container-wrap .box:hover .box-content p {
@@ -141,12 +156,17 @@ body {
   color: #e4ae26;
 }
 
+#education-page .container .container-wrap .box .box-content {
+  text-align: center;
+}
+
 #education-page .container .container-wrap .box .box-content p {
   transition: all 0.5s;
   transform: translateY(200px);
   padding: 1rem;
   font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
   opacity: 0;
+  font-size: 1rem;
 }
 
 #education-page .container .container-wrap .box .box-content .location {
@@ -155,12 +175,14 @@ body {
   transition: all 0.5s;
   transform: translateY(200px);
   opacity: 0;
+  text-align: center;
 }
 
 #education-page .container .container-wrap .box .box-content .location h4 {
   font-weight: normal;
   color: #ffffff;
   padding-left: 0.5rem;
+  font-size: 1rem;
 }
 
 #education-page .container .container-wrap .box .box-content .location i {

@@ -1,6 +1,7 @@
 @import "base";
 #about-page {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +20,10 @@
     align-items: center;
     flex-direction: column;
     background: $white;
-
     opacity: 0.85;
+    @include smallMedia() {
+      width: 80vw;
+    }
 
     .about-page-content {
       display: flex;
@@ -29,8 +32,9 @@
       flex-direction: column;
 
       h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 40px;
+        text-align: center;
 
         &::after {
           content: " Liam";
@@ -42,12 +46,16 @@
         width: 52%;
         margin-bottom: 40px;
         color: $lightgrey;
+        text-align: center;
+        @include smallMedia() {
+          width: 70%;
+        }
       }
     }
 
     .buttons {
-      margin-top: 3.5rem;
-
+      margin-top: 50px;
+      text-align: center;
       a {
         display: inline-block;
         margin: 1rem 2rem;

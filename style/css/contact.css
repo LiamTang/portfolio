@@ -22,35 +22,38 @@ html {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
+}
+
+#contact-page {
+  width: 100vw;
 }
 
 #contact-page .title {
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 
 #contact-page .title h3 {
@@ -71,8 +74,9 @@ body {
 }
 
 #contact-page .container {
-  height: 100vh;
-  width: 100vw;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,8 +87,8 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 4rem;
-  width: 52%;
+  padding-bottom: 3rem;
+  width: 60%;
 }
 
 #contact-page .container .contact-info .item {
@@ -101,6 +105,14 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  #contact-page .container .contact-info .item {
+    height: 100px;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
 #contact-page .container .contact-info .item:hover {
   background-color: #e4ae26;
 }
@@ -109,6 +121,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 60%;
 }
 
 #contact-page .container .contact-form input,
@@ -129,13 +142,20 @@ body {
   max-width: 49%;
 }
 
+@media (max-width: 768px) {
+  #contact-page .container .contact-form .name,
+  #contact-page .container .contact-form .email {
+    max-width: 100%;
+  }
+}
+
 #contact-page .container .contact-form .message {
   min-height: 200px;
   resize: vertical;
+  margin-bottom: 2rem;
 }
 
 #contact-page .container .contact-form button {
-  margin-top: 1rem;
   border-radius: 5px;
   width: 180px;
   background-color: transparent;
@@ -143,9 +163,8 @@ body {
   border: 1px solid #e4ae26;
   padding: 1rem;
   transition: all 0.5s;
-  margin-left: auto;
+  margin: auto;
   cursor: pointer;
-  position: relative;
 }
 
 #contact-page .container .contact-form button:hover {

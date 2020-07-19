@@ -22,35 +22,35 @@ html {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
 }
 
 #about-page {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +73,12 @@ body {
   opacity: 0.85;
 }
 
+@media (max-width: 480px) {
+  #about-page .container {
+    width: 80vw;
+  }
+}
+
 #about-page .container .about-page-content {
   display: flex;
   justify-content: center;
@@ -81,8 +87,9 @@ body {
 }
 
 #about-page .container .about-page-content h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 #about-page .container .about-page-content h3::after {
@@ -94,10 +101,18 @@ body {
   width: 52%;
   margin-bottom: 40px;
   color: #8e8b8b;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #about-page .container .about-page-content p {
+    width: 70%;
+  }
 }
 
 #about-page .container .buttons {
-  margin-top: 3.5rem;
+  margin-top: 50px;
+  text-align: center;
 }
 
 #about-page .container .buttons a {

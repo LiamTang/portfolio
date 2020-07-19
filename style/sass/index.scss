@@ -1,6 +1,7 @@
 @import "base";
 body {
   background-color: $homepageBackground;
+
   #homepage {
     .nav-bar {
       display: flex;
@@ -8,14 +9,17 @@ body {
       justify-content: space-between;
       position: fixed;
       width: 100%;
-      padding: 1rem 0;
+      padding: 1rem;
       top: 0;
-      z-index: 10;
+      left: 0;
+      z-index: 50;
       transition: all 0.3s;
       border-bottom: 1px solid #eee;
       opacity: 0;
 
-      nav {
+      .nav-link {
+        display: flex;
+
         a {
           transition: 0.3s liner;
           color: $navColor;

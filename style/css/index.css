@@ -22,31 +22,30 @@ html {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
 }
 
 body {
@@ -59,25 +58,30 @@ body #homepage .nav-bar {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem;
   top: 0;
-  z-index: 10;
+  left: 0;
+  z-index: 50;
   transition: all 0.3s;
   border-bottom: 1px solid #eee;
   opacity: 0;
 }
 
-body #homepage .nav-bar nav a {
+body #homepage .nav-bar .nav-link {
+  display: flex;
+}
+
+body #homepage .nav-bar .nav-link a {
   transition: 0.3s liner;
   color: #777;
   padding: 0.5em 1em;
 }
 
-body #homepage .nav-bar nav a:hover {
+body #homepage .nav-bar .nav-link a:hover {
   background-color: #eee;
 }
 
-body #homepage .nav-bar nav .active {
+body #homepage .nav-bar .nav-link .active {
   background-color: #eee;
 }
 

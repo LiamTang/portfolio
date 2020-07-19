@@ -1,7 +1,9 @@
 @import "base";
 #contact-page {
+  width: 100vw;
+
   .title {
-    padding-top: 5rem;
+    padding-top: 8rem;
     h3 {
       margin-bottom: 30px;
       color: $yellow;
@@ -19,8 +21,9 @@
     }
   }
   .container {
-    height: 100vh;
-    width: 100vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,8 +32,9 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding-bottom: 4rem;
-      width: 52%;
+      padding-bottom: 3rem;
+      width: 60%;
+
       .item {
         height: 160px;
         width: 33%;
@@ -43,7 +47,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        @include mediumMedia() {
+          height: 100px;
+          width: 100%;
+          margin: 10px 0;
+        }
         &:hover {
           background-color: $yellow;
         }
@@ -54,7 +62,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-
+      width: 60%;
       input,
       textarea {
         width: 100%;
@@ -71,14 +79,17 @@
       .name,
       .email {
         max-width: 49%;
+        @include mediumMedia() {
+          max-width: 100%;
+        }
       }
       .message {
         min-height: 200px;
         resize: vertical;
+        margin-bottom: 2rem;
       }
 
       button {
-        margin-top: 1rem;
         border-radius: 5px;
         width: 180px;
         background-color: transparent;
@@ -86,9 +97,8 @@
         border: 1px solid $yellow;
         padding: 1rem;
         transition: all 0.5s;
-        margin-left: auto;
+        margin: auto;
         cursor: pointer;
-        position: relative;
 
         &:hover {
           background-color: $yellow;

@@ -64,20 +64,19 @@ html {
   font-family: $Abril_Fatface;
   scroll-behavior: smooth;
   @include xLargeMedia() {
-    font-size: 15px;
-  }
-  @include largeMedia() {
     font-size: 14px;
   }
+  @include largeMedia() {
+    font-size: 12px;
+  }
   @include mediumMedia() {
-    font-size: 13px;
+    font-size: 11px;
   }
   @include smallMedia() {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
 }

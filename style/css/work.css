@@ -22,35 +22,34 @@ html {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
 }
 
 #works-page {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   border-bottom: 1px dashed #8e8b8b;
 }
@@ -60,6 +59,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 #works-page .container h3 {
@@ -84,7 +84,8 @@ body {
 }
 
 #works-page .container .work-slider {
-  width: 70vw;
+  width: 100%;
+  height: 60vh;
 }
 
 #works-page .container .work-slider .slider-container {
@@ -92,6 +93,8 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
+  height: 100%;
 }
 
 #works-page .container .work-slider .slider-container .slider-weather-project {
@@ -101,16 +104,18 @@ body {
   margin: 0 auto;
   opacity: 1;
   overflow-x: hidden;
+  width: 40rem;
 }
 
 #works-page .container .work-slider .slider-container .slider-weather-project .image-container {
   border-radius: 8px;
-  height: 60vh;
+  width: 100%;
+  height: auto;
 }
 
 #works-page .container .work-slider .slider-container .slider-weather-project .image-container img {
   width: 100%;
-  height: 100%;
+  height: auto;
   box-shadow: 0 8px 20px 8px #49515d;
   border-radius: 8px;
   cursor: pointer;
@@ -120,11 +125,12 @@ body {
   margin-top: 50px;
   color: #900;
   font-weight: lighter;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 6px;
   font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 #works-page .container .work-slider .slider-container .slider-pizza-project {
@@ -134,17 +140,18 @@ body {
   transform: translateX(50%);
   top: 0;
   visibility: hidden;
+  width: 40rem;
 }
 
 #works-page .container .work-slider .slider-container .slider-pizza-project .image-container {
   border-radius: 8px;
-  height: 60vh;
   width: 100%;
+  height: auto;
 }
 
 #works-page .container .work-slider .slider-container .slider-pizza-project .image-container img {
   width: 100%;
-  height: 100%;
+  height: auto;
   box-shadow: 0 8px 20px 8px #49515d;
   border-radius: 8px;
   cursor: pointer;
@@ -154,30 +161,32 @@ body {
   margin-top: 50px;
   color: #900;
   font-weight: lighter;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 6px;
   font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 #works-page .container .work-slider .slider-container .slider-calculator-project {
   transition: all 0.8s;
   position: absolute;
   visibility: hidden;
-  transform: translateX(50%);
+  transform: translateX(30%);
   top: 0;
   opacity: 0;
+  width: 40rem;
 }
 
 #works-page .container .work-slider .slider-container .slider-calculator-project .image-container {
   border-radius: 8px;
-  height: 60vh;
+  width: 100%;
 }
 
 #works-page .container .work-slider .slider-container .slider-calculator-project .image-container img {
   width: 100%;
-  height: 100%;
+  height: 25rem;
   box-shadow: 0 8px 20px 8px #49515d;
   border-radius: 8px;
   cursor: pointer;
@@ -187,11 +196,12 @@ body {
   margin-top: 50px;
   color: #900;
   font-weight: lighter;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 6px;
   font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 #works-page .container .work-slider .slider-container .active-slide {
