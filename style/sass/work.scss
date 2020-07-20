@@ -1,6 +1,5 @@
 @import "base";
 #works-page {
-  height: 80vh;
   width: 100vw;
   border-bottom: 1px dashed $lightgrey;
   .container {
@@ -11,7 +10,7 @@
     width: 100vw;
 
     h3 {
-      padding-top: 5rem;
+      padding: 5rem 0 2rem 0;
       color: $yellow;
       font-size: 2rem;
     }
@@ -22,6 +21,7 @@
       h4 {
         cursor: pointer;
         padding: 0.5rem 1rem;
+        font-size: 1rem;
 
         &:hover {
           background-color: #eee;
@@ -32,6 +32,9 @@
     .work-slider {
       width: 100%;
       height: 60vh;
+      @include mediumMedia() {
+        height: 45vh;
+      }
       .slider-container {
         display: flex;
         position: relative;
@@ -45,8 +48,11 @@
           top: 0;
           margin: 0 auto;
           opacity: 1;
-          overflow-x: hidden;
+          overflow: hidden;
           width: 40rem;
+          @include smallMedia() {
+            width: 33rem;
+          }
           .image-container {
             border-radius: 8px;
             width: 100%;
@@ -54,7 +60,7 @@
             img {
               width: 100%;
               height: auto;
-              box-shadow: 0 8px 20px 8px $grey;
+              box-shadow: 0 2px 8px 3px $lightgrey;
               border-radius: 8px;
               cursor: pointer;
             }
@@ -76,10 +82,14 @@
           transition: all 0.8s;
           opacity: 0;
           position: absolute;
-          transform: translateX(50%);
+          transform: translateX(-150%);
           top: 0;
           visibility: hidden;
           width: 40rem;
+          overflow: hidden;
+          @include smallMedia() {
+            width: 33rem;
+          }
           .image-container {
             border-radius: 8px;
             width: 100%;
@@ -87,7 +97,7 @@
             img {
               width: 100%;
               height: auto;
-              box-shadow: 0 8px 20px 8px $grey;
+              box-shadow: 0 2px 8px 3px $lightgrey;
               border-radius: 8px;
               cursor: pointer;
             }
@@ -109,11 +119,14 @@
           transition: all 0.8s;
           position: absolute;
           visibility: hidden;
-          transform: translateX(30%);
+          transform: translateX(-150%);
           top: 0;
           opacity: 0;
           width: 40rem;
-
+          overflow: hidden;
+          @include smallMedia() {
+            width: 33rem;
+          }
           .image-container {
             border-radius: 8px;
             width: 100%;
@@ -121,7 +134,7 @@
             img {
               width: 100%;
               height: 25rem;
-              box-shadow: 0 8px 20px 8px $grey;
+              box-shadow: 0 2px 8px 3px $lightgrey;
               border-radius: 8px;
               cursor: pointer;
             }
@@ -145,7 +158,7 @@
           transition: all 0.8s;
           opacity: 1;
           margin: 0 auto;
-          overflow-x: hidden;
+          overflow: hidden;
         }
 
         .hide-slide {
@@ -153,7 +166,7 @@
           transition: all 0.8s;
           transform: translateX(-150%);
           opacity: 0;
-          overflow-x: hidden;
+          overflow: hidden;
         }
       }
     }

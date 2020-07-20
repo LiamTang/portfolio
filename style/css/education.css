@@ -66,13 +66,14 @@ body {
 }
 
 #education-page .title p {
-  color: #900;
+  color: #ffffff;
   font-weight: lighter;
   font-size: 0.8rem;
   letter-spacing: 6px;
   font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 #education-page .container {
@@ -95,6 +96,7 @@ body {
 @media (max-width: 480px) {
   #education-page .container .container-wrap {
     flex-direction: column;
+    margin: 0 2.5rem;
   }
 }
 

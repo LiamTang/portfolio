@@ -49,7 +49,6 @@ body {
 }
 
 #works-page {
-  height: 80vh;
   width: 100vw;
   border-bottom: 1px dashed #8e8b8b;
 }
@@ -63,7 +62,7 @@ body {
 }
 
 #works-page .container h3 {
-  padding-top: 5rem;
+  padding: 5rem 0 2rem 0;
   color: #e4ae26;
   font-size: 2rem;
 }
@@ -77,6 +76,7 @@ body {
 #works-page .container .work-list h4 {
   cursor: pointer;
   padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 
 #works-page .container .work-list h4:hover {
@@ -86,6 +86,12 @@ body {
 #works-page .container .work-slider {
   width: 100%;
   height: 60vh;
+}
+
+@media (max-width: 768px) {
+  #works-page .container .work-slider {
+    height: 45vh;
+  }
 }
 
 #works-page .container .work-slider .slider-container {
@@ -103,8 +109,14 @@ body {
   top: 0;
   margin: 0 auto;
   opacity: 1;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 40rem;
+}
+
+@media (max-width: 480px) {
+  #works-page .container .work-slider .slider-container .slider-weather-project {
+    width: 33rem;
+  }
 }
 
 #works-page .container .work-slider .slider-container .slider-weather-project .image-container {
@@ -116,7 +128,7 @@ body {
 #works-page .container .work-slider .slider-container .slider-weather-project .image-container img {
   width: 100%;
   height: auto;
-  box-shadow: 0 8px 20px 8px #49515d;
+  box-shadow: 0 2px 8px 3px #8e8b8b;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -137,10 +149,17 @@ body {
   transition: all 0.8s;
   opacity: 0;
   position: absolute;
-  transform: translateX(50%);
+  transform: translateX(-150%);
   top: 0;
   visibility: hidden;
   width: 40rem;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  #works-page .container .work-slider .slider-container .slider-pizza-project {
+    width: 33rem;
+  }
 }
 
 #works-page .container .work-slider .slider-container .slider-pizza-project .image-container {
@@ -152,7 +171,7 @@ body {
 #works-page .container .work-slider .slider-container .slider-pizza-project .image-container img {
   width: 100%;
   height: auto;
-  box-shadow: 0 8px 20px 8px #49515d;
+  box-shadow: 0 2px 8px 3px #8e8b8b;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -173,10 +192,17 @@ body {
   transition: all 0.8s;
   position: absolute;
   visibility: hidden;
-  transform: translateX(30%);
+  transform: translateX(-150%);
   top: 0;
   opacity: 0;
   width: 40rem;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  #works-page .container .work-slider .slider-container .slider-calculator-project {
+    width: 33rem;
+  }
 }
 
 #works-page .container .work-slider .slider-container .slider-calculator-project .image-container {
@@ -187,7 +213,7 @@ body {
 #works-page .container .work-slider .slider-container .slider-calculator-project .image-container img {
   width: 100%;
   height: 25rem;
-  box-shadow: 0 8px 20px 8px #49515d;
+  box-shadow: 0 2px 8px 3px #8e8b8b;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -210,7 +236,7 @@ body {
   transition: all 0.8s;
   opacity: 1;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #works-page .container .work-slider .slider-container .hide-slide {
@@ -218,7 +244,7 @@ body {
   transition: all 0.8s;
   transform: translateX(-150%);
   opacity: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @keyframes fade-slide-out {
