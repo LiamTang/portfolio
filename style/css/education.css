@@ -12,12 +12,14 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
   font-size: 16px;
   font-family: "Abril Fatface", cursive;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -130,16 +132,19 @@ body {
 
 #education-page .container .container-wrap .box:hover {
   transform: translateY(-5px) translateZ(0);
+  -webkit-transform: translateY(-5px) translateZ(0);
 }
 
 #education-page .container .container-wrap .box:hover .box-content p {
   transform: translateY(0px);
+  -webkit-transform: translateY(0px);
   opacity: 1;
   transition-delay: 0.5s;
 }
 
 #education-page .container .container-wrap .box:hover .box-content .location {
   transform: translateY(0px);
+  -webkit-transform: translateY(0px);
   opacity: 1;
   transition-delay: 0.6s;
 }
@@ -168,6 +173,7 @@ body {
 #education-page .container .container-wrap .box .box-content p {
   transition: all 0.5s;
   transform: translateY(200px);
+  -webkit-transform: translateY(200px);
   padding: 0.6rem;
   font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
   opacity: 0;
@@ -179,6 +185,7 @@ body {
   padding: 1rem;
   transition: all 0.5s;
   transform: translateY(200px);
+  -webkit-transform: translateY(200px);
   opacity: 0;
   text-align: center;
 }

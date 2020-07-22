@@ -62,15 +62,18 @@
         }
         &:hover {
           transform: translateY(-5px) translateZ(0);
+          -webkit-transform: translateY(-5px) translateZ(0);
 
           .box-content {
             p {
               transform: translateY(0px);
+              -webkit-transform: translateY(0px);
               opacity: 1;
               transition-delay: 0.5s;
             }
             .location {
               transform: translateY(0px);
+              -webkit-transform: translateY(0px);
               opacity: 1;
               transition-delay: 0.6s;
             }
@@ -97,6 +100,7 @@
           p {
             transition: all 0.5s;
             transform: translateY(200px);
+            -webkit-transform: translateY(200px);
             padding: 0.6rem;
             font-family: $Raleway;
             opacity: 0;
@@ -107,6 +111,7 @@
             padding: 1rem;
             transition: all 0.5s;
             transform: translateY(200px);
+            -webkit-transform: translateY(200px);
             opacity: 0;
             text-align: center;
             h4 {

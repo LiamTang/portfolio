@@ -12,12 +12,14 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
   font-size: 16px;
   font-family: "Abril Fatface", cursive;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -194,6 +196,7 @@ body {
 #contact-page .container .contact-form button:hover {
   background-color: #e4ae26;
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
   color: #ffffff;
 }
 
@@ -203,6 +206,7 @@ body {
   right: 40px;
   transition: all 0.5s;
   transform: translateY(3rem);
+  -webkit-transform: translateY(3rem);
   opacity: 0;
 }
 
@@ -220,6 +224,7 @@ body {
 #contact-page .container .back-top a:hover {
   transition: all 0.3s;
   transform: scale(1.2);
+  -webkit-transform: scale(1.2);
   border-radius: 50%;
   background-color: #e4ae26;
 }

@@ -83,6 +83,7 @@
           opacity: 0;
           position: absolute;
           transform: translateX(-150%);
+          -webkit-transform: translateX(-150%);
           top: 0;
           visibility: hidden;
           width: 40rem;
@@ -120,6 +121,7 @@
           position: absolute;
           visibility: hidden;
           transform: translateX(-150%);
+          -webkit-transform: translateX(-150%);
           top: 0;
           opacity: 0;
           width: 40rem;
@@ -158,6 +160,7 @@
         .active-slide {
           visibility: visible;
           transform: translateX(0);
+          -webkit-transform: translateX(0);
           transition: all 0.8s;
           opacity: 1;
           margin: 0 auto;
@@ -168,6 +171,7 @@
           visibility: hidden;
           transition: all 0.8s;
           transform: translateX(-150%);
+          -webkit-transform: translateX(-150%);
           opacity: 0;
           overflow: hidden;
         }
@@ -180,6 +184,7 @@
   0% {
     opacity: 0;
     transform: translateX(-150%);
+
   }
   100% {
     opacity: 0;

@@ -114,6 +114,7 @@
         &:hover {
           background-color: $yellow;
           transform: scale(1.1);
+          -webkit-transform: scale(1.1);
           color: $white;
         }
       }
@@ -125,6 +126,7 @@
       right: 40px;
       transition: all 0.5s;
       transform: translateY(3rem);
+      -webkit-transform: translateY(3rem);
       opacity: 0;
 
       a {
@@ -139,6 +141,7 @@
         &:hover {
           transition: all 0.3s;
           transform: scale(1.2);
+          -webkit-transform: scale(1.2);
           border-radius: 50%;
           background-color: $yellow;
           i {

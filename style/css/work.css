@@ -12,12 +12,14 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
   font-size: 16px;
   font-family: "Abril Fatface", cursive;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -150,6 +152,7 @@ body {
   opacity: 0;
   position: absolute;
   transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
   top: 0;
   visibility: hidden;
   width: 40rem;
@@ -193,6 +196,7 @@ body {
   position: absolute;
   visibility: hidden;
   transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
   top: 0;
   opacity: 0;
   width: 40rem;
@@ -239,6 +243,7 @@ body {
 #works-page .container .work-slider .slider-container .active-slide {
   visibility: visible;
   transform: translateX(0);
+  -webkit-transform: translateX(0);
   transition: all 0.8s;
   opacity: 1;
   margin: 0 auto;
@@ -249,6 +254,7 @@ body {
   visibility: hidden;
   transition: all 0.8s;
   transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
   opacity: 0;
   overflow: hidden;
 }

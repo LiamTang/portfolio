@@ -12,12 +12,14 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
   font-size: 16px;
   font-family: "Abril Fatface", cursive;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -54,7 +56,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../../asset/image/background.jpg) no-repeat center center;
+  background: url(../../asset/image/background.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   border-bottom: 1px dashed #8e8b8b;
@@ -95,6 +97,7 @@ body {
 #about-page .container .about-page-content h3::after {
   content: " Liam";
   animation: textChange 10s linear infinite;
+  -webkit-animation: textChange 10s linear infinite;
 }
 
 #about-page .container .about-page-content p {

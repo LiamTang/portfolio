@@ -57,12 +57,14 @@ $screen-xLarge-max: 1200px;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
   font-size: 16px;
   font-family: $Abril_Fatface;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
   @include xLargeMedia() {
     font-size: 14px;
   }

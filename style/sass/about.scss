@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../../asset/image/background.jpg) no-repeat center center;
+  background: url(../../asset/image/background.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   border-bottom: 1px dashed $lightgrey;
@@ -39,6 +39,7 @@
         &::after {
           content: " Liam";
           animation: textChange 10s linear infinite;
+          -webkit-animation: textChange 10s linear infinite;
         }
       }
 
