@@ -116,6 +116,12 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  #education-page .container .container-wrap .box {
+    width: 48%;
+  }
+}
+
 @media (max-width: 480px) {
   #education-page .container .container-wrap .box {
     width: 100%;
@@ -124,10 +130,6 @@ body {
 
 #education-page .container .container-wrap .box:hover {
   transform: translateY(-5px) translateZ(0);
-}
-
-#education-page .container .container-wrap .box:hover .box-content {
-  text-align: center;
 }
 
 #education-page .container .container-wrap .box:hover .box-content p {
@@ -153,22 +155,23 @@ body {
   text-align: center;
 }
 
+#education-page .container .container-wrap .box .box-title h3 {
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
 #education-page .container .container-wrap .box .box-title h4 {
   font-weight: normal;
   color: #e4ae26;
 }
 
-#education-page .container .container-wrap .box .box-content {
-  text-align: center;
-}
-
 #education-page .container .container-wrap .box .box-content p {
   transition: all 0.5s;
   transform: translateY(200px);
-  padding: 1rem;
+  padding: 0.6rem;
   font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
   opacity: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 #education-page .container .container-wrap .box .box-content .location {

@@ -154,6 +154,9 @@
       opacity: 1;
       transform: translateY(0);
       transition: all 0.5s;
+      @include smallMedia() {
+        opacity: 0;
+      }
     }
   }
 }

@@ -38,7 +38,7 @@
       margin: 0 5rem;
       @include smallMedia() {
         flex-direction: column;
-        margin:0 2.5rem;
+        margin: 0 2.5rem;
       }
       .box {
         width: 30%;
@@ -54,15 +54,16 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        @include mediumMedia() {
+          width: 48%;
+        }
         @include smallMedia() {
           width: 100%;
-          
         }
         &:hover {
           transform: translateY(-5px) translateZ(0);
 
           .box-content {
-            text-align: center;
             p {
               transform: translateY(0px);
               opacity: 1;
@@ -83,20 +84,23 @@
           transition: all 0.5s;
           position: absolute;
           text-align: center;
+          h3 {
+            margin-bottom: 2rem;
+            font-weight: normal;
+          }
           h4 {
             font-weight: normal;
             color: $yellow;
           }
         }
         .box-content {
-          text-align: center;
           p {
             transition: all 0.5s;
             transform: translateY(200px);
-            padding: 1rem;
+            padding: 0.6rem;
             font-family: $Raleway;
             opacity: 0;
-            font-size: 1rem;
+            font-size: 0.9rem;
           }
           .location {
             display: flex;

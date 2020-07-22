@@ -119,3 +119,12 @@ function setSlide(id) {
     pizzaProject.classList.add("hide-slide");
   }
 }
+
+/** set navigation toggle in the small media screen */
+function toggle() {
+  const navLink = document.querySelector(".nav-link");
+  navLink.classList.toggle("nav-link_active");
+
+  const navBar = document.querySelector(".nav-bar");
+  navBar.classList.toggle("nav-toggle_active");
+}

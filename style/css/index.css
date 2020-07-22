@@ -62,14 +62,66 @@ body #homepage .nav-bar {
   top: 0;
   left: 0;
   z-index: 50;
-  transition: all 0.3s;
+  transition: all 0.5s;
   border-bottom: 1px solid #eee;
   transform: translateY(-4rem);
   opacity: 0;
 }
 
+body #homepage .nav-bar .nav-toggle {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  body #homepage .nav-bar .nav-toggle {
+    margin-right: 16px;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  body #homepage .nav-bar .nav-toggle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    height: 1.5px;
+    width: 100%;
+    background: black;
+    z-index: 1;
+    box-shadow: 0 8px 0 black;
+    transition: all 0.3s;
+  }
+  body #homepage .nav-bar .nav-toggle:after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    height: 2px;
+    width: 100%;
+    background: black;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+}
+
 body #homepage .nav-bar .nav-link {
   display: flex;
+}
+
+@media (max-width: 480px) {
+  body #homepage .nav-bar .nav-link {
+    transition: all 0.5s;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    top: 55px;
+    background: #fbfbfb;
+    text-align: center;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 }
 
 body #homepage .nav-bar .nav-link a {
@@ -84,6 +136,13 @@ body #homepage .nav-bar .nav-link a:hover {
 
 body #homepage .nav-bar .nav-link .active {
   background-color: #eee;
+}
+
+@media (max-width: 480px) {
+  body #homepage .nav-bar .nav-link_active {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 body #homepage .nav-bar .logo {
@@ -155,6 +214,18 @@ body #homepage .container .scroll-down {
 
 body #homepage .container .scroll-down img {
   animation: fade-slide-up 1s ease-out forwards;
+}
+
+body #homepage .nav-toggle_active .nav-toggle:before {
+  top: 14px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 0 black;
+}
+
+body #homepage .nav-toggle_active .nav-toggle:after {
+  top: 14px;
+  transform: rotate(-45deg);
+  box-shadow: 0 0 0 black;
 }
 
 .dark-mode {
