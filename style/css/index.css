@@ -119,7 +119,7 @@ body #homepage .nav-bar .nav-link {
     top: 55px;
     background: #fbfbfb;
     text-align: center;
-    transform: translateY(-100%);
+    transform: translateY(-20rem);
     opacity: 0;
   }
 }

@@ -49,7 +49,6 @@ body {
 }
 
 #works-page {
-  width: 100vw;
   border-bottom: 1px dashed #8e8b8b;
 }
 
@@ -71,6 +70,7 @@ body {
   display: flex;
   color: #777;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #works-page .container .work-list h4 {
@@ -201,7 +201,7 @@ body {
 
 @media (max-width: 480px) {
   #works-page .container .work-slider .slider-container .slider-calculator-project {
-    width: 33rem;
+    width: 30rem;
   }
 }
 
@@ -216,6 +216,12 @@ body {
   box-shadow: 0 2px 8px 3px #8e8b8b;
   border-radius: 8px;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  #works-page .container .work-slider .slider-container .slider-calculator-project .image-container img {
+    height: 20rem;
+  }
 }
 
 #works-page .container .work-slider .slider-container .slider-calculator-project h4 {
