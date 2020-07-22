@@ -246,9 +246,8 @@ body #homepage .nav-toggle_active .nav-toggle:after {
 
 .dark-mode #homepage .container h2 {
   position: relative;
+  font-size: 2.5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .dark-mode #homepage .container h2:after {
