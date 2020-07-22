@@ -110,6 +110,7 @@ body {
   margin: 20px 0;
   cursor: pointer;
   transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -140,6 +141,7 @@ body {
   -webkit-transform: translateY(0px);
   opacity: 1;
   transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
 }
 
 #education-page .container .container-wrap .box:hover .box-content .location {
@@ -147,15 +149,18 @@ body {
   -webkit-transform: translateY(0px);
   opacity: 1;
   transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
 }
 
 #education-page .container .container-wrap .box:hover .box-title {
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   opacity: 0;
 }
 
 #education-page .container .container-wrap .box .box-title {
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   position: absolute;
   text-align: center;
 }
@@ -172,6 +177,7 @@ body {
 
 #education-page .container .container-wrap .box .box-content p {
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   transform: translateY(200px);
   -webkit-transform: translateY(200px);
   padding: 0.6rem;
@@ -184,6 +190,7 @@ body {
   display: flex;
   padding: 1rem;
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   transform: translateY(200px);
   -webkit-transform: translateY(200px);
   opacity: 0;
@@ -199,6 +206,7 @@ body {
 
 #education-page .container .container-wrap .box .box-content .location i {
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   color: #e4ae26;
 }
 /*# sourceMappingURL=education.css.map */

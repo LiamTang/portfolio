@@ -66,6 +66,7 @@ body #homepage .nav-bar {
   left: 0;
   z-index: 50;
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   border-bottom: 1px solid #eee;
   transform: translateY(-4rem);
   -webkit-transform: translateY(-4rem);
@@ -85,6 +86,7 @@ body #homepage .nav-bar .nav-toggle {
     height: 25px;
     cursor: pointer;
     transition: all 0.3s;
+    -webkit-transition: all 0.3s;
   }
   body #homepage .nav-bar .nav-toggle:before {
     content: "";
@@ -96,6 +98,7 @@ body #homepage .nav-bar .nav-toggle {
     z-index: 1;
     box-shadow: 0 8px 0 black;
     transition: all 0.3s;
+    -webkit-transition: all 0.3s;
   }
   body #homepage .nav-bar .nav-toggle:after {
     content: "";
@@ -106,6 +109,7 @@ body #homepage .nav-bar .nav-toggle {
     background: black;
     z-index: 1;
     transition: all 0.3s;
+    -webkit-transition: all 0.3s;
   }
 }
 
@@ -116,6 +120,7 @@ body #homepage .nav-bar .nav-link {
 @media (max-width: 480px) {
   body #homepage .nav-bar .nav-link {
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     position: absolute;
     flex-direction: column;
     width: 100%;
@@ -131,6 +136,7 @@ body #homepage .nav-bar .nav-link {
 
 body #homepage .nav-bar .nav-link a {
   transition: 0.3s liner;
+  -webkit-transition: 0.3s liner;
   color: #777;
   padding: 0.5rem 1em;
 }
@@ -162,6 +168,7 @@ body #homepage .nav-bar .logo {
 body #homepage .show-nav {
   background-color: #ffffff;
   transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   opacity: 1;
   transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -181,6 +188,7 @@ body #homepage .container {
 
 body #homepage .container .title {
   display: flex;
+  display: -webkit-flex;
   animation-delay: 0.4s;
   -webkit-animation-delay: 0.4s;
 }
@@ -190,6 +198,7 @@ body #homepage .container .title .light-icon {
   width: 2rem;
   cursor: pointer;
   transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   margin-left: 1rem;
 }
 
@@ -217,6 +226,7 @@ body #homepage .container .scroll-down {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   animation: pulse 1.5s ease-out infinite;
   -webkit-animation: pulse 1.5s ease-out infinite;
   cursor: pointer;
@@ -245,9 +255,9 @@ body #homepage .nav-toggle_active .nav-toggle:after {
 }
 
 .dark-mode #homepage .container h2 {
-  position: relative;
-  font-size: 2.5rem;
-  display: flex;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
 }
 
 .dark-mode #homepage .container h2:after {

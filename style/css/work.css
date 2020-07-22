@@ -107,6 +107,7 @@ body {
 
 #works-page .container .work-slider .slider-container .slider-weather-project {
   transition: all 0.8s;
+  -webkit-transition: all 0.8s;
   position: absolute;
   top: 0;
   margin: 0 auto;
@@ -149,6 +150,7 @@ body {
 
 #works-page .container .work-slider .slider-container .slider-pizza-project {
   transition: all 0.8s;
+  -webkit-transition: all 0.8s;
   opacity: 0;
   position: absolute;
   transform: translateX(-150%);
@@ -193,6 +195,7 @@ body {
 
 #works-page .container .work-slider .slider-container .slider-calculator-project {
   transition: all 0.8s;
+  -webkit-transition: all 0.8s;
   position: absolute;
   visibility: hidden;
   transform: translateX(-150%);
@@ -245,6 +248,7 @@ body {
   transform: translateX(0);
   -webkit-transform: translateX(0);
   transition: all 0.8s;
+  -webkit-transition: all 0.8s;
   opacity: 1;
   margin: 0 auto;
   overflow: hidden;
@@ -253,6 +257,7 @@ body {
 #works-page .container .work-slider .slider-container .hide-slide {
   visibility: hidden;
   transition: all 0.8s;
+  -webkit-transition: all 0.8s;
   transform: translateX(-150%);
   -webkit-transform: translateX(-150%);
   opacity: 0;
