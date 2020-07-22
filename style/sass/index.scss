@@ -1,7 +1,7 @@
 @import "base";
 body {
   background-color: $homepageBackground;
-
+  height: 100vh;
   #homepage {
     .nav-bar {
       display: flex;
@@ -176,9 +176,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
         &:after {
           content: "Liam's Portfolio";
+          font-size: 2.5rem;
           position: absolute;
           color: transparent;
           text-align: center;
@@ -255,7 +255,7 @@ body {
   }
   50% {
     opacity: 1;
-    transform: translateY(-1.2rem);
+    transform: translateY(-1.6rem);
   }
   100% {
     opacity: 0.6;

@@ -50,6 +50,7 @@ body {
 
 body {
   background-color: #fbfbfb;
+  height: 100vh;
 }
 
 body #homepage .nav-bar {
@@ -241,6 +242,7 @@ body #homepage .nav-toggle_active .nav-toggle:after {
 
 .dark-mode #homepage .container h2:after {
   content: "Liam's Portfolio";
+  font-size: 2.5rem;
   position: absolute;
   color: transparent;
   text-align: center;
@@ -307,7 +309,7 @@ body #homepage .nav-toggle_active .nav-toggle:after {
   }
   50% {
     opacity: 1;
-    transform: translateY(-1.2rem);
+    transform: translateY(-1.6rem);
   }
   100% {
     opacity: 0.6;
