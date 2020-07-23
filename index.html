@@ -27,7 +27,7 @@
           <a href="#education-page">Education</a>
           <a href="#contact-page">Contact</a>
         </nav>
-        <div class="nav-toggle" onclick="toggle()" ></div>
+        <div class="nav-toggle" onclick="toggle()"></div>
       </header>
       <div class="container">
         <div class="title fade-slide-up">
@@ -288,13 +288,47 @@
           </div>
         </div>
 
-        <form action="#" class="contact-form">
-          <input type="text" class="name" placeholder="Your Full Name" />
-          <input type="email" class="email" placeholder="Your Email" />
-          <input type="text" class="subject" placeholder="Subject" />
-          <textarea class="message" placeholder="Message"></textarea>
-          <!-- <input type="submit" value="Send Message" class="button" /> -->
-          <button class="button">Send Message</button>
+        <form
+          method="POST"
+          name="contactForm"
+          enctype="multipart/form-data"
+          accept-charset="utf-8"
+          class="contact-form"
+          action="https://formspree.io/tangwangjun321@gmail.com"
+        >
+          <input
+            type="text"
+            class="name"
+            placeholder="Your Full Name"
+            required
+            name="fullName"
+          />
+          <input
+            type="email"
+            class="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            type="text"
+            class="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
+          <textarea
+            class="message"
+            name="message"
+            placeholder="Message"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            value="Send Message"
+            class="submit"
+            onclick="return myForm()"
+          />
         </form>
         <div class="back-top">
           <a href="#homepage"><i class="fas fa-arrow-up"></i></a>

@@ -128,3 +128,21 @@ function toggle() {
   const navBar = document.querySelector(".nav-bar");
   navBar.classList.toggle("nav-toggle_active");
 }
+
+/** set email validation */
+function myForm() {
+  document.querySelector(".submit").addEventListener("click", function (e) {
+    const name = document.forms["contactForm"]["fullName"].value;
+    const email = document.forms["contactForm"]["email"].value;
+    const subject = document.forms["contactForm"]["subject"].value;
+    const message = document.forms["contactForm"]["message"].value;
+    if (subject.length <= 2) {
+      e.preventDefault();
+      alert("subject length is not valid");
+    }
+    if (message.length <= 2) {
+      e.preventDefault();
+      alert("subject length is not valid");
+    }
+  });
+}

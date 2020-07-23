@@ -182,7 +182,7 @@ body {
   margin-bottom: 2rem;
 }
 
-#contact-page .container .contact-form button {
+#contact-page .container .contact-form .submit {
   border-radius: 5px;
   width: 180px;
   background-color: transparent;
@@ -195,7 +195,7 @@ body {
   cursor: pointer;
 }
 
-#contact-page .container .contact-form button:hover {
+#contact-page .container .contact-form .submit:hover {
   background-color: #e4ae26;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
