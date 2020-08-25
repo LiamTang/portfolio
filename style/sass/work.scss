@@ -1,4 +1,4 @@
-@import "base";
+@import 'base';
 #works-page {
   border-bottom: 1px dashed $lightgrey;
   .container {
@@ -160,6 +160,48 @@
           }
         }
 
+        .slider-calendar-project {
+          transition: all 0.8s;
+          -webkit-transition: all 0.8s;
+          position: absolute;
+          visibility: hidden;
+          transform: translateX(-150%);
+          -webkit-transform: translateX(-150%);
+          top: 0;
+          opacity: 0;
+          width: 40rem;
+          overflow: hidden;
+          @include smallMedia() {
+            width: 30rem;
+          }
+          .image-container {
+            border-radius: 8px;
+            width: 100%;
+
+            img {
+              width: 100%;
+              height: 25rem;
+              box-shadow: 0 2px 8px 3px $lightgrey;
+              border-radius: 8px;
+              cursor: pointer;
+              @include smallMedia() {
+                height: 20rem;
+              }
+            }
+          }
+          h4 {
+            margin-top: 50px;
+            color: $red;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            letter-spacing: 6px;
+            font-family: $Raleway;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1.5rem;
+          }
+        }
+
         .active-slide {
           visibility: visible;
           transform: translateX(0);
@@ -189,7 +231,6 @@
   0% {
     opacity: 0;
     transform: translateX(-150%);
-
   }
   100% {
     opacity: 0;

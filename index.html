@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liam Personal Website</title>
+    <link rel="icon" href="./asset/image/favicon.png" />
     <link rel="stylesheet" href="style/css/index.css" />
     <link rel="stylesheet" href="style/css/about.css" />
     <link rel="stylesheet" href="style/css/work.css" />
@@ -27,17 +28,12 @@
           <a href="#education-page">Education</a>
           <a href="#contact-page">Contact</a>
         </nav>
-        <div class="nav-toggle" onclick="toggle()"></div>
+        <div class="nav-toggle"></div>
       </header>
       <div class="container">
         <div class="title fade-slide-up">
           <h2>Liam's Portfolio</h2>
-          <img
-            src="./asset/image/sun.svg"
-            alt="light"
-            class="light-icon"
-            onclick="setDarkMode()"
-          />
+          <img src="./asset/image/sun.svg" alt="light" class="light-icon" " />
         </div>
         <p id="firstParagraph" class="fade-slide-up"></p>
         <div class="scroll-down animate-pop-in">
@@ -76,14 +72,17 @@
       <div class="container">
         <h3>Work</h3>
         <div class="work-list">
-          <h4 onclick="setSlide(1)">
+          <h4 class="list1">
             Weather Forecast App
           </h4>
-          <h4 onclick="setSlide(2)">
+          <h4 class="list2">
             Online Pizza Order
           </h4>
-          <h4 onclick="setSlide(3)">
+          <h4 class="list3">
             JavaScript Calculator
+          </h4>
+          <h4 class="list4">
+            JavaScript Calendar
           </h4>
         </div>
         <div class="work-slider">
@@ -96,17 +95,13 @@
                 />
               </div>
               <h4 class="info">
-                /* Using React to create the application, redux for data storage
-                */
+                /* Using React to create the application*/
               </h4>
             </div>
 
             <div class="slider-pizza-project">
               <div class="image-container">
-                <img
-                  src="asset/image/project_pizza.png"
-                  alt="weather_project"
-                />
+                <img src="asset/image/project_pizza.png" alt="pizza_project" />
               </div>
               <h4 class="info">
                 /* Using React, Koa, MongoDB to create an online pizza order
@@ -121,11 +116,24 @@
                   target="_blank"
                   ><img
                     src="asset/image/project_calculator.png"
-                    alt="weather_project"
+                    alt="calculator_project"
                 /></a>
               </div>
               <h4 class="info">
                 /* Using JavaScript to create a simple calculator */
+              </h4>
+            </div>
+
+            <div class="slider-calendar-project">
+              <div class="image-container">
+                <a
+                  href="https://liamtang.github.io/simple-calculator/"
+                  target="_blank"
+                  ><img src="asset/image/project_calendar.png" alt="calendar"
+                /></a>
+              </div>
+              <h4 class="info">
+                /* Using JavaScript to create a simple calendar */
               </h4>
             </div>
           </div>
@@ -331,12 +339,7 @@
             placeholder="Message"
             required
           ></textarea>
-          <input
-            type="submit"
-            value="Send Message"
-            class="submit"
-            onclick="return myForm()"
-          />
+          <input type="submit" value="Send Message" class="submit" />
         </form>
         <div class="back-top">
           <a href="#homepage"><i class="fas fa-arrow-up"></i></a>

@@ -243,6 +243,56 @@ body {
   line-height: 1.5rem;
 }
 
+#works-page .container .work-slider .slider-container .slider-calendar-project {
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  position: absolute;
+  visibility: hidden;
+  transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
+  top: 0;
+  opacity: 0;
+  width: 40rem;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  #works-page .container .work-slider .slider-container .slider-calendar-project {
+    width: 30rem;
+  }
+}
+
+#works-page .container .work-slider .slider-container .slider-calendar-project .image-container {
+  border-radius: 8px;
+  width: 100%;
+}
+
+#works-page .container .work-slider .slider-container .slider-calendar-project .image-container img {
+  width: 100%;
+  height: 25rem;
+  box-shadow: 0 2px 8px 3px #8e8b8b;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  #works-page .container .work-slider .slider-container .slider-calendar-project .image-container img {
+    height: 20rem;
+  }
+}
+
+#works-page .container .work-slider .slider-container .slider-calendar-project h4 {
+  margin-top: 50px;
+  color: #900;
+  font-weight: lighter;
+  font-size: 0.7rem;
+  letter-spacing: 6px;
+  font-family: "Raleway", "Century Gothic", "TeXGyreAdventor", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
 #works-page .container .work-slider .slider-container .active-slide {
   visibility: visible;
   transform: translateX(0);
